@@ -1,0 +1,71 @@
+.grzx-wrap {
+    @left: 275px;
+    &-left {
+        width: @left; float: left; padding: 8px 28px 0 0;
+        &-title {
+            margin: 4px 0 20px; font-size: 16px;
+        }
+        .user {
+            line-height: 41px; color: #999;
+            &::before { width: 41px; height: 41px; margin-right: 16px; background: url(~@/assets/grzx/head.png); display: inline-block; vertical-align: top; content: ""; }
+            .name { padding: 0 8px; }
+        }
+        .menus {
+            padding: 0; margin-top: 32px;
+            li {
+                height: 42px; line-height: 42px; padding-left: 16px; margin: 8px 0; cursor: pointer; border-radius: 4px;
+                &.cur { background-color: #006fff; color: #fff; }
+            }
+        }
+        .ant-input-search { margin-bottom: 20px; }
+    }
+    &-main {
+        margin-left: @left; min-height: 400px; padding: 32px 0 0 28px; border-left: 1px solid #e6e6e6; overflow: hidden;
+    }
+    &-panel-inf {
+        line-height: 32px; margin: 24px 0 32px;
+        .right { float: right; }
+    }
+    &::after { display: table; clear: both; content: ""; }
+
+    .ant-form {
+        .form-text { width: 200px; display: inline-block; }
+        .form-link { color: #006fff; }
+    }
+    .ant-radio-button-wrapper {
+        padding: 0 32px;
+    }
+}
+
+.grzx-table-tool {
+    margin-bottom: 20px;
+    .right { float: right; }
+    .ant-btn, .ant-input, .ant-select { margin: 0 4px; }
+    .ant-btn { vertical-align: top; }
+}
+
+.sjdp-sceens {
+    padding: 0; margin-left: -24px;
+    >li {
+        width: 334px; min-height: 222px; padding: 0 20px; margin: 0 0 24px 24px; background: #ffffff; border: 1px solid #cfcfcf; border-radius: 4px; display: inline-block;
+        &::hover { border-color: #006fff; }
+        .title { line-height: 48px; padding-top: 6px; font-size: 16px; font-weight: bold; }
+        .img {
+            margin-bottom: 16px;
+            img { width: 100%; height: 112px; display: block; }
+        }
+        .info { margin-bottom: 6px; }
+        .para { margin: 15px 0; }
+        .tool {
+            font-size: 16px; color: #999;
+            .collect {
+                float: right; color: currentColor;
+                &::before { width: 17px; height: 16px; margin-right: 5px; background: url(~@/assets/detail/sc.png); display: inline-block; content: ""; }
+                &.collected {
+                    color: #006fff;
+                    &::before { background-image: url(~@/assets/detail/ysc.png);}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.detail-back {
+    min-height: 100%; background-color: #f8f8f8;
+}
+.detail-head {
+    background-color: #040a51;
+    .menu_conten .menu_center li.up_icon .sec_menu {
+        box-shadow: 0 3px 6px rgba(#000, 0.5);
+    }
+}
+
+.detail-body {
+    width: 1200px; margin: 0 auto;
+}
+.detail-guide {
+    height: 48px; line-height: 48px;
+    a { color: #999; }
+    .divide { margin: 0 8px; color: #808080; font-size: 16px; }
+}
+
+.detail-content {
+    background-color: #fff; padding: 24px 40px; margin-bottom: 60px;
+    &-title {
+        &::before { width: 4px; height: 20px; margin: 8px 16px 0 0; background-color: #006fff; display: inline-block; vertical-align: top; content: ""; }
+        font-size: 24px; line-height: 32px; margin-bottom: 24px;
+        &[type='border'] { padding-bottom: 24px; margin-bottom: 18px; border-bottom: 1px solid #e6e6e6; }
+        .right {
+            float: right; font-size: 14px;
+            a { margin-left: 25px; color: #333; line-height: 20px; display: inline-block; }
+        }
+        .collect, .invite {
+            &::before { width: 20px; height: 20px; margin-right: 2px; background: no-repeat center; display: inline-block; vertical-align: top; content: ""; }
+        }
+        .collect::before { background-image: url(~@/assets/detail/sc.png); }
+        .collected::before { background-image: url(~@/assets/detail/ysc.png); }
+        .invite::before { background-image: url(~@/assets/detail/sq.png); }
+        .inviting::before { background-image: url(~@/assets/detail/sqz.png); }
+        .invited::before { background-image: url(~@/assets/detail/ysq.png); }
+    }
+    &-infos {
+        line-height: 32px; margin-bottom: 24px;
+        .col { width: 250px; margin-right: 64px; display: inline-block; }
+        .label { color: #999; width: 70px; text-align: right; display: inline-block; }
+    }
+    &-intro {
+        background-color: #f6f9fe; padding: 6px 12px; line-height: 32px; margin-bottom: 40px;
+        .label { float: left; margin-right: 8px; }
+        .text { overflow: hidden; }
+    }
+}
+
+.detail-title_api {
+    font-size: 16px; margin-bottom: 21px;
+    &::before { width: 28px; height: 28px; background-image: url(~@/assets/detail/api.png); margin-right: 4px; display: inline-block; vertical-align: top; content: ""; }
+}
+
+.detail-table {
+    width: 100%; border-collapse: collapse; color: #333; margin-bottom: 24px;
+    td, th { height: 48px; line-height: 24px; padding: 12px 18px; border: 1px solid #d8d8d8; }
+    .left { background: #f6f9fe; color: #999; text-align: right; }
+    th { background: #f6f9fe; color: #999; font-weight: normal; }
+
+    &-title {
+        line-height: 22px; margin-bottom: 16px;
+        &::before { width: 6px; height: 6px; margin: 8px 14px 0 10px; background-color: #006fff; vertical-align: top; display: inline-block; content: ""; }
+        &+.detail-table-div { margin-left: 28px; }
+    }
+}
