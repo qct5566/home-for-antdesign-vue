@@ -160,7 +160,7 @@ export const requestHandler = (config, reqParams) => {
     clearParams(config.data)
   }
 
-  // const signature = md5('$linewell@2019$' + paraString + token)
+  // const signature = md5('$@2019$' + paraString + token)
   // config.headers['signature'] = signature
   if (useGlobalLoading) {
     _random = { stamp: Date.now(), url: url }

@@ -230,7 +230,7 @@ service.interceptors.request.use((config) => {
   }
 
   paraString = paramArr.join('')
-  const signature = md5('$linewell@2019$' + paraString + token)
+  const signature = md5('@2019$' + paraString + token)
   config.headers.signature = signature
 
   return config

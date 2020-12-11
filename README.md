@@ -1,4 +1,4 @@
-# linewell-frontend-vue
+# frontend-vue
 
 ## 包安装
 ```
